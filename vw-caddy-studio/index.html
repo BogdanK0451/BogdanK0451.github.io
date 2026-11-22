@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VW Caddy Studio — BogdanK0451</title>
+<meta name="description" content="Interactive 3D studio to take a 2008 VW Caddy apart, part by part, in the browser">
+<meta name="theme-color" content="#d9d6cf">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VW Caddy Studio — BogdanK0451">
+<meta property="og:description" content="Interactive 3D studio to take a 2008 VW Caddy apart, part by part, in the browser">
+<meta property="og:url" content="https://bogdank0451.github.io/vw-caddy-studio/">
+<link rel="canonical" href="https://bogdank0451.github.io/vw-caddy-studio/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%225%22%20fill%3D%22%23141210%22%2F%3E%3Cpath%20d%3D%22M16%205c7%200%2012%204%2012%2010s-5%2011-12%2011S4%2022%204%2016%209%206%2017%206%22%20fill%3D%22none%22%20stroke%3D%22%23e3262b%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preload" href="../fonts/archivo-black-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/jetbrains-mono-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="page-loupe">
+<svg class="defs" aria-hidden="true" focusable="false"><filter id="grease" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="3.2" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+<main class="table">
+<nav class="table-nav" aria-label="Back">
+<a href="../" data-testid="loupe-back"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M19 12H5m6-6-6 6 6 6"/></svg>Contact sheet</a>
+</nav>
+<article class="sheet loupe" aria-labelledby="project-title">
+<header class="loupe-head">
+<h1 id="project-title">VW Caddy Studio</h1>
+<p class="edge-meta"><span class="code-wrap">01A · APP · SEP–NOV 2026<svg class="mark mark-code" viewBox="0 0 200 90" aria-hidden="true" focusable="false"><path class="draw" pathLength="1" d="M74.9 6.9C71.5 7.3 60.7 8 54.5 9.4C48.2 10.8 42.6 13 37.5 15.1C32.4 17.2 27.6 19.6 24 22C20.3 24.4 17.4 26.9 15.5 29.5C13.5 32 12.6 34.6 12.3 37.4C11.9 40.2 12.4 43.7 13.2 46.4C14 49.2 15.1 51.4 17.1 53.8C19 56.2 21.6 58.8 24.9 61C28.2 63.3 32.3 65.4 36.8 67.4C41.3 69.4 46.3 71.8 51.8 73.2C57.2 74.6 63.4 75.2 69.5 76C75.6 76.9 81.9 78.1 88.5 78.4C95.2 78.7 102.7 78.3 109.4 77.9C116.1 77.6 122.7 77.5 128.8 76.5C134.9 75.5 140.5 73.5 146 71.9C151.4 70.2 156.7 68.5 161.4 66.7C166.1 64.9 170.5 63.4 174 61C177.4 58.7 180.1 55.3 182.2 52.8C184.2 50.2 186 48.2 186.1 45.5C186.3 42.8 184.8 39.4 183.2 36.7C181.6 34 179.2 31.5 176.3 29.2C173.4 26.9 169.8 24.9 165.7 23C161.7 21 156.7 19 151.9 17.4C147 15.9 141.9 14.6 136.6 13.4C131.3 12.3 125.8 11.2 119.9 10.6C114.1 9.9 107.6 9.7 101.3 9.4C95.1 9.1 88.7 8.6 82.4 8.7C76 8.9 69.4 9.5 63.2 10.5C57 11.5 50.4 13 45.2 14.7C39.9 16.5 34 20 31.8 21.1"/><path class="draw draw-ghost" pathLength="1" d="M57.2 16.6C55.2 17.3 49.2 19.4 45.2 20.9C41.2 22.3 36.7 23.8 33.3 25.2C29.9 26.6 27.4 27.6 24.7 29.2C22 30.8 18.7 32.9 17 34.8C15.3 36.8 15.1 38.8 14.4 40.7C13.7 42.7 12.9 44.7 12.7 46.7C12.5 48.6 12 50.5 13.2 52.3C14.3 54.1 17.4 55.8 19.5 57.6C21.6 59.4 23 61.7 25.6 63.1C28.3 64.6 31.8 65 35.3 66.2C38.8 67.4 42.9 69.5 46.6 70.6C50.4 71.7 53.9 71.9 57.8 72.7C61.6 73.5 66 74.8 70 75.3C73.9 75.8 77.2 75.4 81.4 75.8C85.6 76.2 90.2 77.4 94.9 77.6C99.6 77.7 104.8 77.1 109.4 76.7C114 76.3 118 75.9 122.5 75.3C127 74.7 131.7 73.9 136.3 73C140.9 72.2 145.8 71.3 149.9 70.2C153.9 69.1 157 67.5 160.6 66.2C164.1 64.8 168.4 63.6 171.2 62.1C173.9 60.6 175.5 59 177.2 57.3C178.9 55.6 180.2 53.9 181.3 52C182.3 50.1 182.8 47.5 183.5 45.7C184.1 43.9 185.4 42.8 185.1 41.2C184.8 39.6 183 37.9 181.7 36.1C180.4 34.3 178.7 32.2 177 30.5C175.3 28.8 173.8 27.2 171.6 25.8C169.4 24.4 166.4 23.6 163.7 22.2C160.9 20.8 156.6 18.4 155.1 17.7"/></svg></span></p>
+<p class="one-liner">Interactive 3D studio to take a 2008 VW Caddy apart, part by part, in the browser</p>
+</header>
+<section class="shots" aria-labelledby="shots-title">
+<h2 id="shots-title" class="visually-hidden">Shots</h2>
+<ol class="shot-strip" id="shot-strip" role="list" tabindex="0" aria-label="Shots, scroll sideways">
+<li class="shot is-screen">
+<span class="dx" aria-hidden="true">BK 400<svg class="dx-arrow" viewBox="0 0 6 8" aria-hidden="true" focusable="false"><path d="M0 0 6 4 0 8z"/></svg>1A</span><figure>
+<a class="shot-link" href="../img/vw-caddy-studio-01-full.webp" data-full-width="1440" data-full-height="900" data-testid="loupe-shot-1">
+<span class="shot-img"><img src="../img/vw-caddy-studio-01-640.webp" srcset="../img/vw-caddy-studio-01-640.webp 640w, ../img/vw-caddy-studio-01-1120.webp 1120w" sizes="(min-width: 860px) 600px, calc(100vw - 92px)" width="640" height="400" alt="Taking the van apart: body shell lifted off the running gear at 47%" decoding="async"></span>
+<span class="visually-hidden">View larger</span>
+</a>
+<figcaption><span class="frame-code">1</span> Taking the van apart: body shell lifted off the running gear at 47%</figcaption>
+</figure>
+</li>
+<li class="shot is-screen">
+<span class="dx" aria-hidden="true">BK 400<svg class="dx-arrow" viewBox="0 0 6 8" aria-hidden="true" focusable="false"><path d="M0 0 6 4 0 8z"/></svg>2A</span><figure>
+<a class="shot-link" href="../img/vw-caddy-studio-02-full.webp" data-full-width="1440" data-full-height="900" data-testid="loupe-shot-2">
+<span class="shot-img"><img src="../img/vw-caddy-studio-02-640.webp" srcset="../img/vw-caddy-studio-02-640.webp 640w, ../img/vw-caddy-studio-02-1120.webp 1120w" sizes="(min-width: 860px) 600px, calc(100vw - 92px)" width="640" height="400" alt="Engine bay view: the body turns see-through to show the 1.9 TDI" decoding="async"></span>
+<span class="visually-hidden">View larger</span>
+</a>
+<figcaption><span class="frame-code">2</span> Engine bay view: the body turns see-through to show the 1.9 TDI</figcaption>
+</figure>
+</li>
+<li class="shot is-screen">
+<span class="dx" aria-hidden="true">BK 400<svg class="dx-arrow" viewBox="0 0 6 8" aria-hidden="true" focusable="false"><path d="M0 0 6 4 0 8z"/></svg>3A</span><figure>
+<a class="shot-link" href="../img/vw-caddy-studio-03-full.webp" data-full-width="1440" data-full-height="900" data-testid="loupe-shot-3">
+<span class="shot-img"><img src="../img/vw-caddy-studio-03-640.webp" srcset="../img/vw-caddy-studio-03-640.webp 640w, ../img/vw-caddy-studio-03-1120.webp 1120w" sizes="(min-width: 860px) 600px, calc(100vw - 92px)" width="640" height="400" alt="The whole van in the studio, with the parts navigator" loading="lazy" decoding="async"></span>
+<span class="visually-hidden">View larger</span>
+</a>
+<figcaption><span class="frame-code">3</span> The whole van in the studio, with the parts navigator</figcaption>
+</figure>
+</li>
+<li class="shot is-screen">
+<span class="dx" aria-hidden="true">BK 400<svg class="dx-arrow" viewBox="0 0 6 8" aria-hidden="true" focusable="false"><path d="M0 0 6 4 0 8z"/></svg>4A</span><figure>
+<a class="shot-link" href="../img/vw-caddy-studio-04-full.webp" data-full-width="1440" data-full-height="900" data-testid="loupe-shot-4">
+<span class="shot-img"><img src="../img/vw-caddy-studio-04-640.webp" srcset="../img/vw-caddy-studio-04-640.webp 640w, ../img/vw-caddy-studio-04-1120.webp 1120w" sizes="(min-width: 860px) 600px, calc(100vw - 92px)" width="640" height="400" alt="Opening the engine: what it is, how it works, key specs and its assemblies" loading="lazy" decoding="async"></span>
+<span class="visually-hidden">View larger</span>
+</a>
+<figcaption><span class="frame-code">4</span> Opening the engine: what it is, how it works, key specs and its assemblies</figcaption>
+</figure>
+</li>
+<li class="shot is-phone">
+<span class="dx" aria-hidden="true">BK 400<svg class="dx-arrow" viewBox="0 0 6 8" aria-hidden="true" focusable="false"><path d="M0 0 6 4 0 8z"/></svg>5A</span><figure>
+<a class="shot-link" href="../img/vw-caddy-studio-05-full.webp" data-full-width="780" data-full-height="1688" data-testid="loupe-shot-5">
+<span class="shot-img"><img src="../img/vw-caddy-studio-05-240.webp" srcset="../img/vw-caddy-studio-05-240.webp 240w, ../img/vw-caddy-studio-05-400.webp 400w" sizes="(min-width: 860px) 170px, 46vw" width="240" height="519" alt="Phone layout: the explode slider in a bottom sheet" loading="lazy" decoding="async"></span>
+<span class="visually-hidden">View larger</span>
+</a>
+<figcaption><span class="frame-code">5</span> Phone layout: the explode slider in a bottom sheet</figcaption>
+</figure>
+</li>
+<li class="shot is-phone">
+<span class="dx" aria-hidden="true">BK 400<svg class="dx-arrow" viewBox="0 0 6 8" aria-hidden="true" focusable="false"><path d="M0 0 6 4 0 8z"/></svg>6A</span><figure>
+<a class="shot-link" href="../img/vw-caddy-studio-06-full.webp" data-full-width="780" data-full-height="1688" data-testid="loupe-shot-6">
+<span class="shot-img"><img src="../img/vw-caddy-studio-06-240.webp" srcset="../img/vw-caddy-studio-06-240.webp 240w, ../img/vw-caddy-studio-06-400.webp 400w" sizes="(min-width: 860px) 170px, 46vw" width="240" height="519" alt="Phone layout: part details" loading="lazy" decoding="async"></span>
+<span class="visually-hidden">View larger</span>
+</a>
+<figcaption><span class="frame-code">6</span> Phone layout: part details</figcaption>
+</figure>
+</li>
+</ol>
+<div class="strip-controls" hidden><button type="button" class="strip-btn" data-scroll="prev" aria-controls="shot-strip" data-testid="loupe-strip-prev"><svg class="strip-arrow is-left" viewBox="0 0 64 28" aria-hidden="true" focusable="false"><path d="M3.8 13.7Q30.7 19.7 57.6 13"/><path d="M45.8 2.6L57.6 13L46.4 22.7"/></svg><span>Earlier shots</span></button><button type="button" class="strip-btn" data-scroll="next" aria-controls="shot-strip" data-testid="loupe-strip-next"><svg class="strip-arrow" viewBox="0 0 64 28" aria-hidden="true" focusable="false"><path d="M3.8 16.7Q30.7 19.1 57.6 14.9"/><path d="M45.8 4L57.6 14.9L46.4 26.6"/></svg><span>Later shots</span></button></div>
+</section>
+<div class="loupe-body">
+<div class="prose">
+<p>VW Caddy Studio is a browser-based 3D explorer of a 2008 Volkswagen Caddy Typ 2K Kombi with 2,788 separately named parts. You can explode the van with a slider, make areas see-through, open any assembly or part to read what it is and how it works, and view it in a studio, a car park, a garage or a city scene. The model is built by Blender Python scripts: every part follows the VW parts catalogue's drawings, and the geometry is cleaned and checked automatically. Photo mode path-traces the current view with WebGPU and a denoiser, and falls back to WebGL where WebGPU isn't available.</p>
+<h2>Highlights</h2>
+<ul class="highlights" role="list">
+<li>2,788 individually named parts across 10 areas, every bolt and fastener included</li>
+<li>Explode slider plus per-area see-through and isolate controls</li>
+<li>Model built by about 145 Blender Python scripts, with a cached build and automated geometry checks</li>
+<li>Path-traced Photo mode on WebGPU with a denoiser, plus a WebGL fallback</li>
+<li>Desktop and phone layouts, four scenes, time of day and weather</li>
+</ul>
+
+</div>
+<dl class="spec">
+<div><dt>Period</dt><dd>SEP–NOV 2026</dd></div>
+<div><dt>Status</dt><dd>live</dd></div>
+<div><dt>Kind</dt><dd>app</dd></div>
+<div class="spec-stack"><dt>Stack</dt><dd><ul role="list"><li>Vue 3</li><li>TypeScript</li><li>Vite</li><li>Three.js (WebGPU)</li><li>three-gpu-pathtracer</li><li>Tailwind CSS 4</li><li>shadcn-vue</li><li>Blender Python</li><li>glTF + Draco</li></ul></dd></div>
+</dl>
+</div>
+<nav class="roll-nav" aria-label="Other projects">
+<a href="../bookmark-cleanup/" rel="prev" data-testid="loupe-prev"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M19 12H5m6-6-6 6 6 6"/></svg><span><span class="frame-code">13A</span> Bookmark cleanup</span></a>
+<a href="../talas/" rel="next" data-testid="loupe-next"><span><span class="frame-code">02A</span> Talas</span><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+</nav>
+</article>
+</main>
+<dialog class="viewer" aria-label="Shot viewer" data-testid="loupe-viewer">
+<figure class="viewer-figure">
+<span class="viewer-loupe" aria-hidden="true" hidden></span>
+<figcaption class="viewer-caption"></figcaption>
+</figure>
+<div class="viewer-controls">
+<button type="button" class="viewer-btn" data-action="prev" data-testid="loupe-viewer-prev"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M19 12H5m6-6-6 6 6 6"/></svg><span>Previous</span></button>
+<span class="viewer-count edge-meta" aria-live="polite"></span>
+<button type="button" class="viewer-btn" data-action="next" data-testid="loupe-viewer-next"><span>Next</span><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+<button type="button" class="viewer-btn viewer-close" data-action="close" data-testid="loupe-viewer-close"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Close</span></button>
+</div>
+</dialog>
+<script src="../assets/loupe.js" defer></script>
+</body>
+</html>
